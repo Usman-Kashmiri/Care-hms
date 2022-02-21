@@ -1,5 +1,64 @@
+  <?php   
+   include 'header.php';
 
-  <?php include 'header.php';?>
+// errors variable
+$nameError ="";
+$emailError ="";
+$msgError ="";
+
+// answer variable
+$name="";
+$email="";
+$msg="";
+
+// $emailRegex="/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/";
+
+if(isset($_POST['SUB']))
+{
+  if(empty($_POST["name"])) {
+    $nameError = "Name is required...!";
+  } 
+  else {
+   $name = $_POST["name"];
+  }
+  if(empty($_POST["email"])) {
+    $emailError = "Email is required...!";
+  } 
+  else 
+  {
+    // if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/",$email)) 
+    // {
+    //   $emailError = "Invalid email format...!";
+    // }
+   $email = $_POST["email"];
+  }
+  if(empty($_POST["message"])) 
+  {
+    $msgError = "message is required...!";
+  } 
+    else 
+  {
+    $msg = $_POST["message"];
+  }
+}
+if (isset($_POST['SUB']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
+  $to = 'usmankashmiri378@gmail.com';
+  $from = $email;
+  $subject = $name.' Care - HMS';
+  $message = $msg;
+  
+  $send = mail($to,$subject,$message,$from);
+  
+  if($send)
+  {
+    echo "<script>alert('Mail Send...!')</script>";
+  }
+  else
+  {
+    echo "<script>alert('Mail Not Send...!')</script>";
+  }
+}
+?>
   
   <style>
     #label {
@@ -28,32 +87,16 @@
     #map-section {
       margin-bottom: 100px;
     }
-    .con-info {
+    .contact-info {
       display: flex;
       padding-top: 20px;
     }
         .d-flex {
           display: flex;
         }
-        .d-flex i {
-          height: 33px;
-          width: 33px;
-          border-radius: 50%;
-          background: #f41c21;
-          text-align: center;
-          line-height: 33px;
-          color: #fff;
-          font-size: 12px;
-        }
-        .d-flex i:hover {
-          transition:0.5s;
-          transform: scale(1.1);
-        }
-        .d-flex a:hover {
-          color: red;
-        }
+        
         @media screen and (max-width:540px) {
-          .con-info {
+          .contact-info {
       display: block;
     }
         }
@@ -75,7 +118,7 @@
                 <div class="row">
                   <div class="col-md-6 col-sm-12">
                       <h4>Contact Us Via:</h4>
-                      <div class="con-info">
+                      <div class="contact-info">
                           <div class="col-md-4 col-sm-12">
                             <ul>
                               <li class="d-flex"><a href="https://goo.gl/maps/jFs9522aA6crx82VA"><i class="fa fa-map-marker"></i>
@@ -99,17 +142,20 @@
                   </div>
                   <div class="col-md-6 col-sm-12">
                     <!-- FORM  -->
-                    <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
+                    <form role="form" name="contact_form" id="contact_form" class="contact-form" method="post">
                         <label id="label">Username:</label>
                           <input type="text" class="form-control col-sm-12" name="name" id="name" placeholder="Enter your name here">
+                          <span class="text-danger"><?php echo $nameError; ?></span>
                           <label id="label">Email:</label>
                           <input type="text" class="form-control col-sm-12" name="email" id="email" placeholder="Enter your email here">
+                          <span class="text-danger"><?php echo $emailError; ?></span>
                           <label id="label">Company:</label>
                           <input type="text" class="form-control col-12" name="company" id="company" placeholder="Enter your phone here">
                         <label id="label">Message:</label>
                           <textarea class="form-control class="col-sm-12"" name="message" id="message" rows="5" placeholder="Enter your message here"></textarea>
+                          <span class="text-danger"><?php echo $msgError; ?></span>
                       <div class="col-sm-12" id="btn-container">
-                        <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">SEND MESSAGE</button>
+                        <button type="submit" value="submit" name="SUB" class="btn" id="btn_submit">SEND MESSAGE</button>
                       </div>
                     </form>
                   </div>

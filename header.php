@@ -71,14 +71,7 @@ include("dbconnection.php");
 </style>
 </head>
 <body>
-
-<!-- Page Loader -->
-<div id="loader">
-  <div class="position-center-center">
-    <img width="90%" src="assets/images/preloader/preloader.gif" alt="Preloader">
-  </div>
-</div>
-
+  
   <!-- Header -->
   <header class="header-style-2">
     <div class="container" id="header-top">

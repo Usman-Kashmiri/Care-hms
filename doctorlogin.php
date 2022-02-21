@@ -36,13 +36,16 @@ if(isset($_POST['submit']))
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<title>HMS - Admin</title>
+<title>Care - HMS - Admin Panel</title>
 <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Custom Css -->
 <link href="assets/css/main.css" rel="stylesheet">
 <link href="assets/css/login.css" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/images/logo/logo 3.png" type="image/x-icon">
 
 <!-- Swift Themes. You can choose a theme from css/themes instead of get all themes -->
 <link href="assets/css/themes/all-themes.css" rel="stylesheet" />
@@ -58,7 +61,7 @@ if(isset($_POST['submit']))
 ?></div>
     <div class="card-top"></div>
     <div class="card">
-        <h1 class="title"><span>Hospital Management System</span>Login <span class="msg">Hello, Doctor!</span></h1>
+        <h1 class="title"><span>Care - Hospital Management System</span>Login <span class="msg">Hello, Doctor!</span></h1>
         <div class="col-md-12">
 
     <form method="post" action="" name="frmadminlogin" id="sign_in" onSubmit="return validateform()">
@@ -71,13 +74,12 @@ if(isset($_POST['submit']))
 					<input type="password" name="password" id="password" class="form-control"  placeholder="Password" /> </div>
                 </div>
                 <div>
-                    <div class="">
+                    <!-- <div class="">
                         <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
                         <label for="rememberme">Remember Me</label>
-                    </div>
+                    </div> -->
                     <div class="text-center">
 					<input type="submit" name="submit" id="submit" value="Login" class="btn btn-raised waves-effect g-bg-cyan" /></div>
-                    <div class="text-center"> <a href="forgot-password.html">Forgot Password?</a></div>
                 </div>
             </form>
         </div>

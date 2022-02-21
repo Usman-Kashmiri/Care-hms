@@ -16,6 +16,13 @@
   </style>
 
   <!-- Bnr Header -->
+  <!-- Page Loader -->
+<div id="loader">
+  <div class="position-center-center">
+    <img width="90%" src="assets/images/preloader/preloader.gif" alt="Preloader">
+  </div>
+</div>
+
   <section class="main-banner">
     <div class="tp-banner-container">
       <div class="tp-banner">
