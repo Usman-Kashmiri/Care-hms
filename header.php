@@ -7,10 +7,10 @@ include("dbconnection.php");
 <html class="no-js" lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="refresh" content="60" />
+<!-- <meta http-equiv="refresh" content="60" /> -->
 <meta name="author" content="Usman Kashmiri" />
 <!-- Document Title -->
-<title>HMS</title>
+<title>Care - HMS</title>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="assets/images/logo/logo 3.png" type="image/x-icon">
@@ -24,56 +24,77 @@ include("dbconnection.php");
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 
 <!-- Fonts Online -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
 
 <!-- JavaScripts -->
-<script src="js/vendors/modernizr.js"></script>
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- <script src="js/vendors/modernizr.js"></script> -->
+<script src="js/wow.js"></script>
 <script src="sweetalert2.min.js"></script>
 <link rel="stylesheet" href="sweetalert2.min.css">
+<style>
+  .head-info li i:hover {
+    transition:0.5s;
+    transform: scale(1.1);
+  }
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width:992px) {
+    section {
+      padding: 20px !important;
+    }
+    .header-style-2 {
+      justify-content: cemter;
+    }
+    #header-top .logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .head-info, .head-info ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:540px) {
+    .head-info, .head-info ul {
+      display: none;
+    }
+  }
+</style>
 </head>
 <body>
 
 <!-- Page Loader -->
 <div id="loader">
   <div class="position-center-center">
-    <img src="assets/images/preloader/preloader.gif" alt="">
-    <!-- <div class="cssload-thecube">
-      <div class="cssload-cube cssload-c1"></div>
-      <div class="cssload-cube cssload-c2"></div>
-      <div class="cssload-cube cssload-c4"></div>
-      <div class="cssload-cube cssload-c3"></div>
-    </div> -->
+    <img width="90%" src="assets/images/preloader/preloader.gif" alt="Preloader">
   </div>
 </div>
 
-
-  
   <!-- Header -->
   <header class="header-style-2">
-    <div class="container">
-      <div class="logo"> <a href="index.html"><img src="images/hmslogo.png" alt="" style="height: 51px;"></a> </div>
+    <div class="container" id="header-top">
+      <div class="logo"> <a href="index.html"><img src="assets/images/logo/care logo 4.png" alt="" style="height: 51px;"></a> </div>
       <div class="head-info">
         <ul>
-          <li> <i class="fa fa-phone"></i>
-            <p>1010 2020 36360<br>
-              9-269-690-HMS</p>
+          <li style="display:flex;"><a href="tel:090078601"><i class="fa fa-phone"></i>
+            <p>0900 - 78601<br>Care - HMS</a></p>
           </li>
-          <li> <i class="fa fa-envelope-o"></i>
-            <p>hmsphp@gmail.com<br>
-              info@hmsphp.com</p>
+          <li style="display:flex;"><a href="mailto:care_h@gmail.com"><i class="fa fa-envelope-o"></i>
+            <p>care_h@gmail.com</a><br>
+              <a href="mailto:info@care.com">info@care.com</a></p>
           </li>
-          <li> <i class="fa fa-map-marker"></i>
-            <p>1942  Poe Lane<br>
-             Kansas City</p>
+          <li style="display:flex;"><a href="https://goo.gl/maps/jFs9522aA6crx82VA"><i class="fa fa-map-marker"></i>
+            <p>Care Hospital<br>
+             Karanchi</a></p>
           </li>
         </ul>
       </div>
@@ -81,7 +102,7 @@ include("dbconnection.php");
     
     <!-- Nav -->
     <nav class="navbar ownmenu">
-      <div class="container">
+      <div class="container" id="navbar">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false"> <span><i class="fa fa-navicon"></i></span> </button>
         </div>

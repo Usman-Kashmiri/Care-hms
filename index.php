@@ -1,4 +1,20 @@
   <?php include 'header.php'?>
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- style -->
+
+  <style>
+    .icons-container {
+      padding: 20px;
+    }
+     @media screen and (max-width:992px) {
+      .icons-container {
+        grid-template-columns: auto auto;
+      }
+    }
+  </style>
+
   <!-- Bnr Header -->
   <section class="main-banner">
     <div class="tp-banner-container">
@@ -21,7 +37,7 @@
                 data-elementdelay="0.03" 
                 data-endelementdelay="0.4" 
                 data-endspeed="300"
-                style="z-index: 5; font-size:50px; font-weight:500; color:black;  max-width: auto; max-height: auto; white-space: nowrap;">Hospital Management System</div>
+                style="z-index: 5; font-size:50px; font-weight:500; color:black;  max-width: auto; max-height: auto; white-space: nowrap;">Care - Hospital Management System</div>
             
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr tp-resizeme" 
@@ -35,7 +51,7 @@
                 data-elementdelay="0.03" 
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
-                style="z-index: 6; font-size:40px; color:gray; font-weight:500; white-space: nowrap;">We care about your health </div>
+                style="z-index: 6; font-size:40px; color:gray; font-weight:500; white-space: nowrap;">We care about your healt...</div>
             
             <!-- LAYER NR. 3 -->
             <div class="tp-caption sfb tp-resizeme" 
@@ -62,7 +78,7 @@
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
                 data-scrolloffset="0"
-                style="z-index: 8;"><a href="#." class="btn">Book Now</a> </div>
+                style="z-index: 8;"><a href="patientappointment.php" class="btn">Book Now</a> </div>
           </li>
           
           <!-- SLIDE  -->
@@ -100,7 +116,7 @@
             
             <!-- LAYER NR. 3 -->
             <div class="tp-caption sfb tp-resizeme" 
-                data-x="left" data-hoffset="400" 
+                data-x="center" data-hoffset="0" 
                 data-y="center" data-voffset="30" 
                 data-speed="800" 
                 data-start="1400" 
@@ -110,11 +126,11 @@
                 data-elementdelay="0.1" 
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
-                style="z-index: 7; font-size:16px; color:#000; font-weight:500; line-height:26px; max-width: auto; max-height: auto; white-space: nowrap;">Improved diagnostic performance and heightened satisfaction of patients <br> and physicians delight.</div>
+                style="z-index: 7; font-size:16px; color:#000; text-align:center; font-weight:500; line-height:26px; max-width: auto; max-height: auto; white-space: nowrap;">Improved diagnostic performance and heightened satisfaction of patients <br> and physicians delight.</div>
             
             <!-- LAYER NR. 4 -->
             <div class="tp-caption lfb tp-resizeme scroll" 
-                data-x="left" data-hoffset="400" 
+                data-x="center" data-hoffset="0" 
                 data-y="center" data-voffset="140"
                 data-speed="800" 
                 data-start="1600"
@@ -123,7 +139,7 @@
                 data-endelementdelay="0.1" 
                 data-endspeed="300" 
                 data-scrolloffset="0"
-                style="z-index: 8;"><a href="#." class="btn">CONTACT NOW</a> </div>
+                style="z-index: 8;"><a href="contact.php" class="btn">CONTACT NOW</a> </div>
           </li>
           
           <!-- SLIDE  -->
@@ -163,11 +179,81 @@
     </div>
   </section>
   
+    <!-- home section starts  -->
+
+    <section class="home" id="home sections">
+
+        <div class="image wow fadeInLeft" data-wow-delay="0.2s">
+            <img src="images/svgs/home-img.svg" alt="Doctor Svg">
+        </div>
+
+        <div class="content wow fadeInRight" data-wow-delay="0.2s">
+        <h3>In an emergency? Need help now?</h3>
+        <p>Instantly book an appoinment with just click...</p>
+        <div class="cta-btn">
+          <a href="patientappointment.php" id="btn" class="btn btn-primary btn-lg">Book an appoinment</a>
+        </div>
+            <!-- <a href="contact.php" class="btn"> contact us <span class="fa fa-chevron-right"></span> </a> -->
+            <!-- <a href="booking.html" class="btn"> book appointment <span class="fa fa-chevron-right"></span> </a> -->
+            <!-- <a href="patientappointment.php" class="btn"> login <span class="fa fa-chevron-right"></span> </a> -->
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- Book an Appointment -->
+    <!-- <section class="mt-5">
+
+    </section> -->
+
+
+    <!-- icons section starts  -->
+
+    <section id="sections" class="icons-container">
+
+        <div class="icons wow fadeInRight" data-wow-delay="0.2s">
+            <i class="fa fa-user-md"></i>
+            <h3>140+</h3>
+            <p>doctors at work</p>
+        </div>
+
+        <div class="icons wow fadeInRight" data-wow-delay="0.3s">
+            <i class="fa fa-users"></i>
+            <h3>1040+</h3>
+            <p>satisfied patients</p>
+        </div>
+
+        <div class="icons wow fadeInRight" data-wow-delay="0.4s">
+            <i class="fa fa-bed"></i>
+            <h3>500+</h3>
+            <p>bed facility</p>
+        </div>
+
+        <div class="icons wow fadeInRight" data-wow-delay="0.5s">
+            <i class="fa fa-hospital-o"></i>
+            <h3>80+</h3> 
+            <p>available hospitals</p>
+        </div>
+
+    </section>
+
+    <!-- icons section ends -->
+
+    <section id="sections" class="our-doctors my-5">
+        <div class="container">
+        <h1 class="heading"> meet our <span>specialist</span></h1>
+        <div class="d-flex justify-content-center">
+            <a href="doctors.html" class="btn doc-btn" id="btn"> View specialist <span class="fa fa-chevron-right"></span> </a>
+            <img class="wow fadeInUp" data-wow-delay="0.3s" src="images/ourdoctors.jpg" alt="Our Doctors">
+        </div>
+        </div>
+    </section>
+
   <!-- Content -->
   <div id="content"> 
     
     <!-- Intro -->
-    <section class="p-t-b-150">
+    <section style="padding: 50px 50px;">
       <div class="container">
         <div class="intro-main">
           <div class="row"> 
@@ -179,22 +265,22 @@
                 <p>Besides providing world class clinical lab services, Labaid Diagnostic Centre houses a pool of doctors of different medical specialty to serve the ailing patients as outpatients. They are all reputed and respected in their medical specialty for outstanding clinical management</p>
                 <ul class="row">
                   <li class="col-sm-6">
-                    <h6> <i class="lnr  lnr-checkmark-circle"></i> EMERGENCY CASE</h6>
+                    <h6> <i class="fa fa-check-circle"></i> EMERGENCY CASE</h6>
                     <p>Excepteur sint occaecat cupidatat non roident, 
                       sunt in culpa qui officia deserunt mollit </p>
                   </li>
                   <li class="col-sm-6">
-                    <h6> <i class="lnr  lnr-checkmark-circle"></i> QUALIFIED DOCTORS</h6>
+                    <h6> <i class="fa fa-check-circle"></i> QUALIFIED DOCTORS</h6>
                     <p>Excepteur sint occaecat cupidatat non roident, 
                       sunt in culpa qui officia deserunt mollit </p>
                   </li>
                   <li class="col-sm-6">
-                    <h6> <i class="lnr  lnr-checkmark-circle"></i> ONLINE APPOINTMENT</h6>
+                    <h6> <i class="fa fa-check-circle"></i> ONLINE APPOINTMENT</h6>
                     <p>Excepteur sint occaecat cupidatat non roident, 
                       sunt in culpa qui officia deserunt mollit </p>
                   </li>
                   <li class="col-sm-6">
-                    <h6> <i class="lnr  lnr-checkmark-circle"></i> FREE MEDICAL COUNSELING</h6>
+                    <h6> <i class="fa fa-check-circle"></i> FREE MEDICAL COUNSELING</h6>
                     <p>Excepteur sint occaecat cupidatat non roident, 
                       sunt in culpa qui officia deserunt mollit </p>
                   </li>
@@ -225,7 +311,7 @@
 
     
     <!-- DOCTOR LIST -->
-    <section class="p-t-b-150">
+    <section style="padding: 50px 50px;">
       <div class="container"> 
         
         <!-- Heading -->

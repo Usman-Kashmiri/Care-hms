@@ -1,6 +1,29 @@
-/*=======================================================
-			Page Loader
-========================================================*/
+/* Color Variables */
+
+:root {
+    --primary: #3472f7;
+    --primary-hover: #1148be;
+    --red: #f51c20;
+}
+
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    transition: 0.4s linear;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6b6b6b;
+}
+
+
+/* Page Loader */
 
 #loader {
     position: fixed;
@@ -405,7 +428,6 @@
 
 .ownmenu li {
     display: inline-block;
-    float: left;
 }
 
 .ownmenu a {
@@ -416,8 +438,6 @@
     outline: none;
     z-index: 10;
 }
-
-.ownmenu li {}
 
 .ownmenu .nav ul.dropdown,
 .ownmenu .nav ul.dropdown li ul.dropdown {
@@ -454,15 +474,12 @@ header .ownmenu .nav ul.dropdown-menu .indicator {
 .ownmenu .nav ul.dropdown-menu li a {
     width: 100%;
     display: inline-block;
-    float: left;
     clear: both;
     text-decoration: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-
-.ownmenu .nav ul.dropdown-menu li:hover>a {}
 
 .ownmenu ul.dropdown-menu li ul.dropdown.left {
     left: auto;
@@ -550,10 +567,6 @@ header .ownmenu .nav ul.dropdown-menu .indicator {
     transition: border 0.3s linear;
 }
 
-.ownmenu>li.fix-sub>.megamenu,
-.ownmenu>li.fix-sub>.megamenu.half-width,
-.ownmenu>li.fix-sub>.dropdown {}
-
 .ownmenu>li>.megamenu.half-width {
     width: 50%;
 }
@@ -619,8 +632,6 @@ header .ownmenu .nav ul.dropdown-menu .indicator {
     background: #e0e0e0;
     color: #555;
 }
-
-.megamenu .row {}
 
 .ownmenu>li.right {
     float: right;
@@ -1043,7 +1054,6 @@ header .ownmenu .nav ul.dropdown-menu .indicator {
 
 .flexslider .slides>li {
     display: none;
-    -webkit-backface-visibility: hidden;
 }
 
 .flexslider .slides img {
@@ -1270,8 +1280,6 @@ header .ownmenu .nav ul.dropdown-menu .indicator {
     opacity: 1;
     cursor: default;
 }
-
-.checkbox {}
 
 .checkbox label {
     display: inline-block;
@@ -1587,8 +1595,6 @@ input[type="radio"] .styled:checked+label::after {
     width: 100%;
 }
 
-.bx-wrapper .bx-loading {}
-
 .bx-wrapper .bx-pager {
     text-align: center;
     font-size: .85em;
@@ -1623,8 +1629,6 @@ input[type="radio"] .styled:checked+label::after {
     background: #eeb013;
 }
 
-.bx-wrapper .bx-prev {}
-
 .bx-wrapper .bx-prev:before {
     height: 35px;
     width: 35px;
@@ -1634,8 +1638,6 @@ input[type="radio"] .styled:checked+label::after {
     font-family: 'FontAwesome';
     position: relative;
 }
-
-.bx-wrapper .bx-next {}
 
 .bx-wrapper .bx-prev:hover {
     background-position: 0 0;
@@ -1777,7 +1779,6 @@ input[type="radio"] .styled:checked+label::after {
 
 .owl-carousel .owl-stage {
     position: relative;
-    -ms-touch-action: pan-Y;
 }
 
 .owl-carousel .owl-stage:after {
@@ -1792,7 +1793,6 @@ input[type="radio"] .styled:checked+label::after {
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    -webkit-transform: translate3d(0px, 0px, 0px);
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -1828,7 +1828,6 @@ input[type="radio"] .styled:checked+label::after {
     position: relative;
     min-height: 1px;
     float: left;
-    -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -1839,7 +1838,6 @@ input[type="radio"] .styled:checked+label::after {
 
 .owl-carousel .owl-item img {
     display: block;
-    -webkit-transform-style: preserve-3d;
 }
 
 .owl-carousel.owl-text-select-on .owl-item {
@@ -1903,7 +1901,6 @@ input[type="radio"] .styled:checked+label::after {
     margin-top: -40px;
     cursor: pointer;
     z-index: 1;
-    -webkit-backface-visibility: hidden;
     -webkit-transition: scale 100ms ease;
     -moz-transition: scale 100ms ease;
     -ms-transition: scale 100ms ease;
@@ -1973,8 +1970,6 @@ input[type="radio"] .styled:checked+label::after {
 .bootstrap-select.fit-width {
     width: auto!important
 }
-
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {}
 
 .bootstrap-select .dropdown-toggle:focus {
     outline: thin dotted #333!important;
@@ -2263,11 +2258,6 @@ select.mobile-device {
 
 .noUi-target,
 .noUi-target * {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -ms-touch-action: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -2762,13 +2752,6 @@ button.ui-button::-moz-focus-inner {
     top: 0px !important;
 }
 
-.ui-datepicker .ui-datepicker-prev-hover {}
-
-.ui-datepicker .ui-datepicker-next-hover {}
-
-.ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-datepicker-next span {}
-
 .ui-datepicker .ui-datepicker-title {
     margin: 0 2.3em;
     line-height: 1.8em;
@@ -3132,8 +3115,6 @@ html * {
 .cd-main-content {
     position: relative;
     z-index: 2;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
@@ -3149,8 +3130,6 @@ html * {
     -o-transform: translateX(300px);
     transform: translateX(300px);
 }
-
-header {}
 
 header.lateral-menu-is-open {
     -webkit-transform: translateX(-300px);
@@ -3308,7 +3287,6 @@ header.is-fixed {
     background-color: #171717;
     overflow-y: auto;
     -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
     -webkit-transition: -webkit-transform .4s 0s, visibility 0s .4s;
     -moz-transition: -moz-transform .4s 0s, visibility 0s .4s;
     transition: transform .4s 0s, visibility 0s .4s;
@@ -3403,7 +3381,6 @@ header.is-fixed {
     z-index: 1043;
     position: fixed;
     outline: none !important;
-    -webkit-backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -3557,8 +3534,6 @@ button::-moz-focus-inner {
     opacity: 1;
     filter: alpha(opacity=100);
 }
-
-.mfp-close:active {}
 
 .mfp-close-btn-in .mfp-close {
     color: #333333;
@@ -3905,8 +3880,6 @@ screen and (max-height: 300px) {
     overflow: hidden;
 }
 
-.pop-open-style li {}
-
 .pop-open-style li span {
     display: inline-block;
 }
@@ -4058,7 +4031,6 @@ screen and (max-height: 300px) {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
     opacity: 0;
-    -webkit-backface-visibility: hidden;
     /* ideally, transition speed should match zoom duration */
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -8543,7 +8515,6 @@ screen and (max-height: 300px) {
     display: inline-block;
     text-align: center;
     width: 50%;
-    float: left;
     font-size: 10px;
     color: #000;
     margin-bottom: 20px;
@@ -8556,8 +8527,6 @@ screen and (max-height: 300px) {
     color: #fff;
     border-color: #000;
 }
-
-.layouts {}
 
 .styleswitcher {
     position: fixed;
@@ -8635,10 +8604,6 @@ screen and (max-height: 300px) {
 .noUi-target,
 .noUi-target * {
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -ms-touch-action: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -9202,13 +9167,6 @@ button.ui-button::-moz-focus-inner {
     right: 0px;
     top: 0px !important;
 }
-
-.ui-datepicker .ui-datepicker-prev-hover {}
-
-.ui-datepicker .ui-datepicker-next-hover {}
-
-.ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-datepicker-next span {}
 
 .ui-datepicker .ui-datepicker-title {
     margin: 0 2.3em;

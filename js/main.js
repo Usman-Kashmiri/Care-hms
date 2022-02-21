@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     /*-----------------------------------------------------------------------------------*/
     /* 	LOADER
     /*-----------------------------------------------------------------------------------*/
-    $("#loader").delay(1500).fadeOut("slow");
+    $("#loader").delay(2200).fadeOut("slow");
     /*-----------------------------------------------------------------------------------*/
     /*		STICKY NAVIGATION
     /*-----------------------------------------------------------------------------------*/
@@ -25,6 +25,30 @@ jQuery(document).ready(function($) {
         offset: '100%',
         triggerOnce: true
     });
+
+    var wow = new WOW({
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: false // trigger animations on mobile devices (true is default)
+    });
+    wow.init();
+
+    // login page script
+
+    // Show password Icon
+    $('#togglePassword').on('click', function() {
+        if ($("#password").attr("type") == "password") {
+            //Change type attribute
+            $("#password").attr("type", "text");
+        } else {
+            //Change type attribute
+            $("#password").attr("type", "password");
+        }
+        $(this).toggleClass('fa-eye-slash');
+    });
+
+
     /*-----------------------------------------------------------------------------------*/
     /*	ISOTOPE PORTFOLIO
     /*-----------------------------------------------------------------------------------*/

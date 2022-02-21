@@ -61,6 +61,20 @@ if(isset($_SESSION['patientid']))
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<!-- Style -->
+
+<style>
+    .book-img {
+        position: relative;
+        top: 80px;
+    }
+    @media screen and (max-width:992px) { 
+        .book-img {
+            top: 0;
+        }
+    }
+</style>
+
 <div class="wrapper col4">
     <div id="container">
 
@@ -189,7 +203,7 @@ if(isset($_SESSION['patientid']))
                                                 <select name="select6" id="select6" class="selectpicker">
                                                     <option value="" selected="" hidden="">Select Gender</option>
                                                     <?php
-                                        $arr = array("Male","Female");
+                                        $arr = array("Male","Female","others");
                                         foreach($arr as $val)
                                         {
                                             echo "<option value='$val'>$val</option>";
@@ -286,6 +300,10 @@ if(isset($_SESSION['patientid']))
                                         </li>
                                 </form>
                             </div>
+                        </div>
+                        <!-- img -->
+                        <div class="col-md-5">
+                            <img class="img-responsive book-img" src="images/svgs/book-img.svg" alt="">
                         </div>
                     </div>
                 </div>

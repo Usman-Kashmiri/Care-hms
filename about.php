@@ -20,22 +20,22 @@
                                 software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             <ul class="row">
                                 <li class="col-sm-6">
-                                    <h6> <i class="lnr  lnr-checkmark-circle"></i> EMERGENCY CASE</h6>
+                                    <h6> <i class="fa fa-check-circle"></i> EMERGENCY CASE</h6>
                                     <p>Excepteur sint occaecat cupidatat non roident,
                                         sunt in culpa qui officia deserunt mollit </p>
                                 </li>
                                 <li class="col-sm-6">
-                                    <h6> <i class="lnr  lnr-checkmark-circle"></i> QUALIFIED DOCTORS</h6>
+                                    <h6> <i class="fa fa-check-circle"></i> QUALIFIED DOCTORS</h6>
                                     <p>Excepteur sint occaecat cupidatat non roident,
                                         sunt in culpa qui officia deserunt mollit </p>
                                 </li>
                                 <li class="col-sm-6">
-                                    <h6> <i class="lnr  lnr-checkmark-circle"></i> ONLINE APPOINTMENT</h6>
+                                    <h6> <i class="fa fa-check-circle"></i> ONLINE APPOINTMENT</h6>
                                     <p>Excepteur sint occaecat cupidatat non roident,
                                         sunt in culpa qui officia deserunt mollit </p>
                                 </li>
                                 <li class="col-sm-6">
-                                    <h6> <i class="lnr  lnr-checkmark-circle"></i> FREE MEDICAL COUNSELING</h6>
+                                    <h6> <i class="fa fa-check-circle"></i> FREE MEDICAL COUNSELING</h6>
                                     <p>Excepteur sint occaecat cupidatat non roident,
                                         sunt in culpa qui officia deserunt mollit </p>
                                 </li>
@@ -43,8 +43,9 @@
                         </div>
                     </div>
 
-                    <!-- Intro Timing -->
-                    <div class="col-md-5"> <img class="img-responsive intro-img" src="images/intro-img.jpg" alt="">
+                    <!-- img -->
+                    <div class="col-md-5">
+                        <img class="img-responsive" src="images/svgs/about-img.svg" alt="">
                     </div>
                 </div>
             </div>
